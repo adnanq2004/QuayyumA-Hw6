@@ -53,15 +53,6 @@ int main() {
   }
   printf("}\n");
 
-  // printf("Reversed Array using *: [");
-  // for (i = 0; i < 10; i++) {
-  //   printf("%d", clonearray[i]);
-  //   if (i != 9) {
-  //     printf(", ");
-  //   }
-  // }
-  // printf("]\n");
-
   return 0;
 
 }
