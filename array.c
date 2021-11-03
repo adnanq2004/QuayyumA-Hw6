@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
 
@@ -24,11 +25,11 @@ int main() {
 
   int clonearray[10];
 
-  int *ap = &arrayvar;
-  int *cp = &clonearray;
+  int *ap = arrayvar;
+  int *cp = clonearray;
 
   for (i = 0; i < 10; i++) {
-    *(cp + i) = * (ap + 9 - i);
+    *(cp + i) = *(ap + 9 - i);
   }
 
   printf("clonearray: {");
@@ -38,8 +39,8 @@ int main() {
   printf("}\n");
 
   int clonearray2[10];
-  *ap = &arrayvar;
-  int *cp2 = &clonearray2;
+  ap = arrayvar;
+  int *cp2 = clonearray2;
 
 
   ap[9-9] = 0;
