@@ -17,7 +17,7 @@ int main() {
     arrayvar[i] = x;
   }
 
-  printf("arrayvar: { ");
+  printf("arrayvar: {");
   for (i = 0; i < 10; i++) {
     printf("%d ", arrayvar[i]);
   }
@@ -39,11 +39,11 @@ int main() {
   printf("}\n");
 
   int clonearray2[10];
-  ap = arrayvar;
+  //ap = arrayvar;
   int *cp2 = clonearray2;
 
 
-  ap[9-9] = 0;
+  //ap[0] = 0;
   for (i = 0; i < 10; i++) {
     cp2[i] = ap[9-i];
   }
